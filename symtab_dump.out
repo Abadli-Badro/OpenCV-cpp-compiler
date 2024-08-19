@@ -1,0 +1,21 @@
+------------ ------ ------------ 
+Name         Type   Initial Value   
+------------ ------ ------------ 
+opencv2      undef  
+i            int    (null)       
+j            int    (null)       
+cv           undef  
+columns      int    (null)       
+threshvalue  float  (null)       
+waitKey      undef  
+hpp          undef  
+namedWindow  undef  
+imageOrigin  matrice
+opencv       undef  
+rows         int    (null)       
+WINDOW       float  (null)       
+imageThresh  matrice
+imshow       undef  
+std          undef  
+maxval       float  (null)       
+thresh       float  (null)       

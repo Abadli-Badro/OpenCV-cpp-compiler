@@ -1,0 +1,40 @@
+#include < opencv2/opencv.hpp >
+#include < std >
+
+using namespace cv;
+using namespace std;
+
+int main(){
+
+    float maxval,threshvalue,WINDOW,thresh;
+    int i,j;
+    int rows = 500 ,columns = 500;
+
+    Mat imageOrigin(rows , columns , CV_8UC1);
+    Mat imageThresh(rows , columns , CV_8UC1);
+
+    rows = 500;
+    columns = 500;
+
+    for(i=0;i<rows;i++){
+        for(j=0;i<columns;j++){
+            if(imageOrigin.at<uchar>(i, j) > threshvalue) {
+                imageThresh.at<uchar>(i, j) = 255;
+            }
+            else if(imageOrigin.at<uchar>(i, j) <= threshvalue){
+                imageThresh.at<uchar>(i, j) = 0;
+            }
+        }
+    }
+
+    namedWindow("Original img" , WINDOW);
+    imshow("Original img", imageOrigin);
+    namedWindow("Thresholded img" , WINDOW);
+    imshow("Thresholded img", imageThresh);
+
+    waitKey(0);
+
+    return 0;
+}
+
+
